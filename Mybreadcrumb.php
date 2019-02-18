@@ -3,7 +3,7 @@
 class CI_Mybreadcrumb {
 
 	private $breadcrumbs = array();
-	private $tags = "";
+	private $tags = array();
 	
 	function __construct()
 	{
@@ -42,7 +42,7 @@ class CI_Mybreadcrumb {
 		}
 	}
 	
-	function itemCloseTage($tags=""){
+	function itemCloseTag($tags=""){
 		if(empty($tags)){
 			return $this->tags['itemClose'];
 		}else{
